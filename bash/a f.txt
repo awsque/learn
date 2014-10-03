@@ -1,0 +1,12 @@
+带空格打文件名在for in迭代和find等中会出现问题
+解决：
+	一：修改内部字段分隔符(internal Field separator) IFS
+		以换行符为例
+		oldIFS=$IFS
+		IFS=$'\n'
+
+		......your code........
+
+
+		IFS=$oldIFS
+	二：看具体的命令而定  可参考man手册
