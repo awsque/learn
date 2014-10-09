@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#统计文件打单词出现的次数
 if [ $# -ne 1 ];
 then
 	echo "Usage:$0 filename"
